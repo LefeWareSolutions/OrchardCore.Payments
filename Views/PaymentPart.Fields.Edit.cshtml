@@ -1,0 +1,18 @@
+@model PaymentPartEditViewModel
+
+@{
+
+}
+
+<div class="form-group">
+    <div class="row col-sm-3">
+        <label asp-for="@Model.Cost">Price</label>
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+            </div>
+            <input asp-for="@Model.Cost" class="form-control content-preview-select" placeholder="0.00" required/>
+        </div>
+        <span class="hint">Price</span>
+    </div>
+</div>
