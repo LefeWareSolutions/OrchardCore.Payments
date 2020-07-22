@@ -1,5 +1,5 @@
 # OrchardCore.Payment
-An Orchard Core module that allows .
+A module for handling payment scenarios in OrchardCore 
 
 - This module is not meant to actually process any payments, rather it is meant to be used in conjuction with other extension modules for actual payment:
     - Stripe: https://github.com/JoshLefebvre/OrchardCore.StripePayment   
@@ -12,7 +12,6 @@ An Orchard Core module that allows .
 - The payment part can be attached to any existing content item (e.g. a product or registration).
 - This module is still in early stages of development and is not ready for consumption.
 
-## TODOs
 
 
 ## Setting up your dev environment
