@@ -39,12 +39,14 @@ namespace OrchardCore.Payments.Drivers
             return Edit(model);
         }
 
-        private async Task ValidateAsync(PaymentPart paymentPart, IUpdateModel updater)
+        private Task ValidateAsync(PaymentPart paymentPart, IUpdateModel updater)
         {
             if (paymentPart.Cost < 0)
             {
                 updater.ModelState.AddModelError(Prefix, nameof(paymentPart.Cost), S["You must set price higher than 0"]);
             }
+
+            return Task.CompletedTask;
         }
     }
 }
