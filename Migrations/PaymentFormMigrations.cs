@@ -6,11 +6,11 @@ using OrchardCore.Data.Migration;
 
 namespace LefeWareSolutions.Payments
 {
-  public class PaymentMigrations : DataMigration
+  public class PaymentFormMigrations : DataMigration
     {
         private readonly IContentDefinitionManager _contentDefinitionManager;
 
-        public PaymentMigrations(IContentDefinitionManager contentDefinitionManager)
+        public PaymentFormMigrations(IContentDefinitionManager contentDefinitionManager)
         {
             _contentDefinitionManager = contentDefinitionManager;
         }
@@ -43,15 +43,14 @@ namespace LefeWareSolutions.Payments
                 )
             );
 
-            //_contentDefinitionManager.AlterTypeDefinition("PaymentForm", builder => builder
-            //    .Creatable()
-            //    .Draftable()
-            //    .Versionable()
-            //    .Listable()
-            //    .WithPart("TitlePart", part => part.WithPosition("1"))
-            //    .WithPart("PaymentPart", part => part.WithPosition("2"))
-            //    .WithPart("StripePaymentFormPart", part => part.WithPosition("3"))
-            //);
+            _contentDefinitionManager.AlterTypeDefinition("PaymentForm", builder => builder
+                .Creatable()
+                .Draftable()
+                .Versionable()
+                .Listable()
+                .WithPart("TitlePart", part => part.WithPosition("1"))
+                .WithPart("PaymentPart", part => part.WithPosition("2"))
+            );
 
             return 1;
         }

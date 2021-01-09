@@ -13,7 +13,7 @@ namespace LefeWareSolutions.Payments
         public override void ConfigureServices(IServiceCollection services)
         {
             //Migrations
-            services.AddScoped<IDataMigration, PaymentMigrations>();
+            services.AddScoped<IDataMigration, PaymentFormMigrations>();
 
             //Parts
             services.AddContentPart<PaymentPart>()

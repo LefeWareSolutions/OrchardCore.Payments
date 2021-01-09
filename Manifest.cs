@@ -5,7 +5,7 @@ using OrchardCore.Modules.Manifest;
     Author = "LefeWare Solutions",
     Website = "https://lefewaresolutions.com",
     Version = "1.0.0",
-    Category = "Payment",
+    Category = "LefeWare Solutions Modules",
     Description = "Allows users to use as set up payment"
 )]
 
