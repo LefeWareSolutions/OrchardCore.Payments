@@ -43,15 +43,6 @@ namespace LefeWareSolutions.Payments
                 )
             );
 
-            _contentDefinitionManager.AlterTypeDefinition("PaymentForm", builder => builder
-                .Creatable()
-                .Draftable()
-                .Versionable()
-                .Listable()
-                .WithPart("TitlePart", part => part.WithPosition("1"))
-                .WithPart("PaymentPart", part => part.WithPosition("2"))
-            );
-
             return 1;
         }
     }

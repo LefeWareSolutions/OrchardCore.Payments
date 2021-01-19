@@ -17,10 +17,10 @@ namespace OrchardCore.Payments.Drivers
             S = localizer;
         }
 
-        public override IDisplayResult Display(PaymentPart part)
-        {
-            return View("PaymentPart", part).Location("Detail", "Content");
-        }
+        //public override IDisplayResult Display(PaymentPart part)
+        //{
+        //    return View("PaymentPart", part).Location("Detail", "Content");
+        //}
 
         public override IDisplayResult Edit(PaymentPart part)
         {
